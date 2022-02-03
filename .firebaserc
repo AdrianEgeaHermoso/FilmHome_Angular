@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "simwama-d6fcf": {
+      "hosting": {
+        "simwama": [
+          "simwama-d6fcf"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "simwama-d6fcf"
+  }
+}
