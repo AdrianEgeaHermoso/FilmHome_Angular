@@ -21,6 +21,7 @@ import {SpeedDialModule} from 'primeng/speeddial';
 import {DialogModule} from 'primeng/dialog';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputNumberModule } from 'primeng/inputnumber';
+import {AvatarModule} from 'primeng/avatar';
 
 
 
@@ -47,7 +48,8 @@ import { InputNumberModule } from 'primeng/inputnumber';
     SpeedDialModule,
     DialogModule,
     InputTextModule,
-    InputNumberModule
+    InputNumberModule,
+    AvatarModule
   
   ],
   providers: [],
