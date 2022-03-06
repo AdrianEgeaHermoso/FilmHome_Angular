@@ -3,7 +3,10 @@
     margin-bottom: 2%;
 }
 
-th, td{text-align: center !important;}
+th, td{text-align: center !important;
+}
+
+
 
 .add-button{
     position: fixed;
@@ -12,7 +15,7 @@ th, td{text-align: center !important;}
 }
 
 ::ng-deep .p-panel-header{
-    background-color: blue !important;
+    background-color: #3393C8 !important;
 }
 
 ::ng-deep .p-panel-title{
@@ -21,4 +24,9 @@ th, td{text-align: center !important;}
 }
 
 .cards{background-color: #21E2F1;}
+
+::ng-deep .formulario{
+    margin-left: 300px;
+    margin-right: 300px;
+}
 

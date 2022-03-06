@@ -25,7 +25,7 @@ export class AppComponent {
   });
 
 
-  formButtonText: string = 'Add product';
+  formButtonText: string = 'Añadir Película';
   displayProductForm = false;
   displayConfirmDelete = false;
   idForDeletion = '';
@@ -52,7 +52,7 @@ export class AppComponent {
   addProduct(){
 
     this.productService.addProduct(this.productForm.value);
-    this.productForm.reset({salePrice:0,stock:0,purchasePrice:0});
+    this.productForm.reset({score:0,purchasePrice:0});
     
   }
 
@@ -61,7 +61,7 @@ export class AppComponent {
 
     this.productService.getProduct(id).subscribe(data => this.productForm.patchValue(data));
 
-    this.formButtonText = "Update product";
+    this.formButtonText = "Actualizar Película";
 
 
   }
@@ -69,18 +69,19 @@ export class AppComponent {
   updateProductStep2(){
     
     this.productService.updateProduct(this.productForm.value);
-    this.formButtonText = "Add product";
+    this.formButtonText = "Añadir Película";
+    
     
   }
 
   cancel() {
     this.productForm.reset();
-    this.formButtonText = "Add product";
+    this.formButtonText = "Añadir Película";
     this.displayProductForm = false;
   }
 
   formSubmit(){
-    if(this.formButtonText === 'Add product'){this.addProduct();
+    if(this.formButtonText === 'Añadir Película'){this.addProduct();
     }else{
       this.updateProductStep2();
     }
