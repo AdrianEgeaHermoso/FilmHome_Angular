@@ -19,8 +19,8 @@ export class AppComponent {
     productId: new FormControl(''),
     description: new FormControl(''),
     purchasePrice: new FormControl(''),
-    salePrice: new FormControl(''),
-    stock: new FormControl(''),
+    format: new FormControl(''),
+    score: new FormControl(''),
     picture: new FormControl(''),
   });
 

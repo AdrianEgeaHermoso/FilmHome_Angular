@@ -2,7 +2,7 @@ export interface Product {
     productId: string;
     description: string;
     purchasePrice: number;
-    salePrice: number;
-    stock: number;
+    format: string;
+    score: number;
     picture: string;
 }

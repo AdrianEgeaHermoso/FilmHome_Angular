@@ -22,13 +22,16 @@ import {DialogModule} from 'primeng/dialog';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputNumberModule } from 'primeng/inputnumber';
 import {AvatarModule} from 'primeng/avatar';
+import { CalendarComponent } from './calendar/calendar.component';
+import {CalendarModule} from 'primeng/calendar';
 
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,9 @@ import {AvatarModule} from 'primeng/avatar';
     DialogModule,
     InputTextModule,
     InputNumberModule,
-    AvatarModule
+    AvatarModule,
+    CalendarModule
+
   
   ],
   providers: [],
