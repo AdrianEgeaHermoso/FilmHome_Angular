@@ -26,7 +26,10 @@ export class AppComponent {
 
 
   formButtonText = 'Add product';
-
+  displayProductForm = false;
+  displayConfirmDelete = false;
+  idForDeletion = '';
+  descriptionForDeletion = '';
 
 
   constructor(public productService:ProductService){
@@ -58,6 +61,19 @@ export class AppComponent {
 
   formSubmit(){
     this.formButtonText === 'Add product' ? this.addProduct(): this.updateProductStep2();
+    this.displayProductForm = false;
+  }
 
+
+  confirmDeleteProduct(product: Product){
+    this.idForDeletion = product.productId;
+    this.descriptionForDeletion = product.description;
+    this.displayConfirmDelete = true;
+
+  }
+
+  deleteProduct(){
+    this.productService.deleteProduct(this.idForDeletion);
+    this.displayConfirmDelete = false;
   }
 }

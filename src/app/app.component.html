@@ -1,118 +1,195 @@
 <form [formGroup]="productForm" (ngSubmit)="formSubmit()">
 
-    <label for="description">Descripton: </label>
-    <input id="description" type="text" formControlName="description"><br>
-  
-    <label for="purchasePrice">Purchase Price: </label>
-    <input id="purchasePrice" type="number" formControlName="purchasePrice"><br>
+  <label for="description">Description: </label>
+  <input id="description" type="text" formControlName="description"><br>
 
-    <label for="salePrice">Sale Price: </label>
-    <input id="salePrice" type="number" formControlName="salePrice"><br>
+  <label for="purchasePrice">Purchase Price: </label>
+  <input id="purchasePrice" type="number" formControlName="purchasePrice"><br>
 
-    <label for="stock">Stock: </label>
-    <input id="stock" type="number" formControlName="stock"><br>
+  <label for="salePrice">Sale Price: </label>
+  <input id="salePrice" type="number" formControlName="salePrice"><br>
 
-    <label for="picture">Picture: </label>
-    <input id="picture" type="text" formControlName="picture"><br>
+  <label for="stock">Stock: </label>
+  <input id="stock" type="number" formControlName="stock"><br>
 
-    <button type="submit">{{formButtonText}}</button>
-  
-  </form>
+  <label for="picture">Picture: </label>
+  <input id="picture" type="text" formControlName="picture"><br>
+
+  <button type="submit">{{formButtonText}}</button>
+
+</form>
 
 <pre>{{productForm.value | json}}</pre>
 
 <!--<pre>{{products | async | json}}</pre>-->
 
 <table>
-    <thead>
-        <tr>
-            <th></th>
-            <th>Description</th>
-            <th>Purchase Price</th>
-            <th>Sale Price</th>
-            <th>Stock</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let p of products | async">
-            <td><img [src]="p.picture" width="60px"></td>
-            <td>{{p.description}}</td>
-            <td>{{p.purchasePrice}}</td>
-            <td>{{p.salePrice}}</td>
-            <td>{{p.stock}}</td>
-            <td><button (click)="updateProductStep1(p.productId)">update</button></td>
-            <td><button (click)="productService.deleteProduct(p.productId)">X</button></td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Description</th>
+      <th>Purchase Price</th>
+      <th>Sale Price</th>
+      <th>Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products | async">
+      <td><img [src]="p.picture" width="60px"></td>
+      <td>{{p.description}}</td>
+      <td>{{p.purchasePrice}}</td>
+      <td>{{p.salePrice}}</td>
+      <td>{{p.stock}}</td>
+      <td><button (click)="updateProductStep1(p.productId)">update</button></td>
+      <td><button (click)="productService.deleteProduct(p.productId)">X</button></td>
+    </tr>
+  </tbody>
 </table>
 
 
 <div class="layout-dashboard">
-    <div class="p-grid ui-fluid">
-        <div class="p-col-12 p-lg-6">
-            <div class="card card-w-title">
-                <h1>Discharge of Products</h1>
-                <form class="p-grid" [formGroup]="productForm" (ngSubmit)="formSubmit()">
-                    <div class="col-12 p-6">
-                        <input id="description" type="text" placeholder="Description" formControlName="description"><br>
-                        <input id="purchasePrice" type="number" placeholder="PurchasePrice" formControlName="purchasePrice"><br>
-                        <input id="salePrice" type="number" placeholder="SalePrice" formControlName="salePrice"><br>
-                        <input id="stock" type="number" placeholder="Stock" formControlName="stock"><br>
-                        <input id="picture" type="text" placeholder="Picture" formControlName="picture"><br>
-                        <p></p>
-                        <button type="submit" icon="pi pi-check" class="p-button">{{formButtonText}}</button>
-                    </div>
-                </form>
-                
-            </div>
-        </div>
+  <div class="p-grid ui-fluid">
+    <div class="p-col-12 p-lg-6">
+      <div class="card card-w-title">
+        <h1>Discharge of Products</h1>
+        <form class="p-grid" [formGroup]="productForm" (ngSubmit)="formSubmit()">
+          <div class="col-12 p-6">
+            <input id="description" type="text" placeholder="Description" formControlName="description"><br>
+            <input id="purchasePrice" type="number" placeholder="PurchasePrice" formControlName="purchasePrice"><br>
+            <input id="salePrice" type="number" placeholder="SalePrice" formControlName="salePrice"><br>
+            <input id="stock" type="number" placeholder="Stock" formControlName="stock"><br>
+            <input id="picture" type="text" placeholder="Picture" formControlName="picture"><br>
+            <p></p>
+            <button type="submit" icon="pi pi-check" class="p-button">{{formButtonText}}</button>
+          </div>
+        </form>
+
+      </div>
     </div>
+  </div>
 </div>
 
 <p-panel header="PRODUCTS LIST">
-  
-    <p-table [value]="(products | async)!" [paginator]="true" [rows]="5">
-      <ng-template pTemplate="header">
-        <tr>
-          <th>Image</th>
-          <th>Description</th>
-          <th>Purchase price</th>
-          <th>Sale price</th>
-          <th>Stock</th>
-          <th>Update</th>
-          <th>Delete</th>
-        </tr>
-      </ng-template>
-      <ng-template pTemplate="body" let-p>
-        <tr>
-          <td><img [src]="p.picture" width="60px"></td>
-          <td>{{ p.description }}</td>
-          <td>{{ p.purchasePrice }}</td>
-          <td>{{ p.salePrice }}</td>
-          <td>{{ p.stock }}</td>
-          <td>
-            <button
-              pButton
-              type="button"
-              icon="pi pi-pencil"
-              class="p-button-rounded"
-              (click)="updateProductStep1(p.productId)"
-              title="update product">
-            </button>
-          </td>
-          <td>
-            <button
-              pButton
-              type="button"
-              icon="pi pi-trash"
-              class="p-button-rounded"
-              (click)="productService.deleteProduct(p.productId)"
-              title="delete product">
-            </button>
-          </td>
-        </tr>
-      </ng-template>
-    </p-table>
-  </p-panel>
-  
 
+  <p-table [value]="(products | async)!" [paginator]="true" [rows]="5">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Image</th>
+        <th>Description</th>
+        <th>Purchase price</th>
+        <th>Sale price</th>
+        <th>Stock</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-p>
+      <tr>
+        <td><img [src]="p.picture" width="60px"></td>
+        <td>{{ p.description }}</td>
+        <td>{{ p.purchasePrice }}</td>
+        <td>{{ p.salePrice }}</td>
+        <td>{{ p.stock }}</td>
+        <td>
+          <button pButton type="button" icon="pi pi-pencil" class="p-button-rounded"
+            (click)="updateProductStep1(p.productId)" title="update product">
+          </button>
+        </td>
+        <td>
+          <button pButton type="button" icon="pi pi-trash" class="p-button-rounded"
+            (click)="confirmDeleteProduct(p)" title="delete product">
+          </button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+
+
+
+<!-- FORM DIALOG -->
+
+<div class="add-button">
+
+  <p-speedDial (click)="displayProductForm = true" buttonClassName="p-button-warning">
+
+  </p-speedDial>
+</div>
+
+
+
+
+<p-dialog [(visible)]="displayProductForm" [style]="{width:'40vw'}">
+  <ng-template pTemplate="header">
+    Product
+  </ng-template>
+
+
+  <form [formGroup]="productForm" (ngSubmit)="formSubmit()">
+
+    <div class="card">
+
+      <div class="field">
+        <label for="description">Description: </label>
+        <input class="inputfield w-full" pInputText id="description" type="text" formControlName="description">
+      </div>
+
+      <div class="field">
+        <label for="purchasePrice">Purchase Price: </label>
+        <input pInputText class="inputfield w-full" id="purchasePrice" type="number" formControlName="purchasePrice"
+         mode="currency" currency="EUR">
+      </div>
+
+      <div class="field">
+        <label for="salePrice">Sale Price: </label>
+        <input pInputText class="inputfield w-full" id="salePrice" type="number" formControlName="salePrice">
+      </div>
+
+      <div class="field">
+        <label for="stock">Stock: </label>
+        <input pInputText class="inputfield w-full" id="stock" type="number" formControlName="stock">
+      </div>
+      <div class="field">
+      <label for="picture">Picture: </label>
+      <input pInputText class="inputfield w-full" id="picture" type="text" formControlName="picture"><br>
+    </div>
+    </div>
+
+    <p-footer>
+
+      <p-button type="submit" [label]="formButtonText" styleClass="p-button-success"></p-button>
+
+      <p-button (click)="displayProductForm = false" label="Cancel" styleClass="p-button-danger">
+
+      </p-button>
+
+    </p-footer>
+
+
+  </form>
+
+
+
+</p-dialog>
+
+
+
+
+<!-- DELETE DIALOG CONFIRM -->
+
+
+<p-dialog [(visible)]="displayConfirmDelete">
+
+  <div class="card">
+    Are you sure want to delete the product <b>{{descriptionForDeletion}}</b>?
+  </div>
+
+  <p-footer>
+    <p-button (click)="deleteProduct()" label="Yes"></p-button>
+    &nbsp;
+    <p-button (click)="displayConfirmDelete = false" label="No"></p-button>
+  </p-footer>
+
+</p-dialog>
+
+</p-panel>

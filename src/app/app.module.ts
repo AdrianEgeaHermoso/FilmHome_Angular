@@ -17,6 +17,11 @@ import { TableModule } from 'primeng/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PaginatorModule } from 'primeng/paginator';
 import {CardModule} from 'primeng/card';
+import {SpeedDialModule} from 'primeng/speeddial';
+import {DialogModule} from 'primeng/dialog';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputNumberModule } from 'primeng/inputnumber';
+
 
 
 
@@ -38,7 +43,11 @@ import {CardModule} from 'primeng/card';
     BrowserAnimationsModule,
     PaginatorModule,
     FormsModule,
-    CardModule
+    CardModule,
+    SpeedDialModule,
+    DialogModule,
+    InputTextModule,
+    InputNumberModule
   
   ],
   providers: [],
