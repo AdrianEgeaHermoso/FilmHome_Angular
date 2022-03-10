@@ -10,32 +10,32 @@
 <img height="400px" width="800px" src="/src/assets/img/home.png">
 
 # FORMULARIO INSERCIÓN PELICULAS :clapper:
-<img height="500px" width="400px" src="/src/assets/img/formulario1.png">
+<img height="400px" width="800px" src="/src/assets/img/formulario1.png">
 
 # FORMULARIO INSERCIÓN DEL BOTÓN FLOTANTE :film_strip:
 <img height="500px" width="400px" src="/src/assets/img/formulario2.png">
 
 # TABLA LISTADO PELÍCULAS :film_projector:
-<img height="400px" width="800px" src="/src/assets/img/listado.png">
+<img height="500px" width="1000px" src="/src/assets/img/listado.png">
 
 # CONFIRMACIÓN BORRADO :clapper:
-<img height="500px" width="400px" src="/src/assets/img/borrado.png">
+<img height="200px" width="400px" src="/src/assets/img/borrado.png">
 
 # CARDS HOMENAJEADOS, FESTIVALES, CRÍTICAS :film_strip:
-<img height="500px" width="400px" src="/src/assets/img/eventos.png">
+<img height="500px" width="1000px" src="/src/assets/img/eventos.png">
 
-# CARDS RECOMENDACIONES, CALENDARIO, PRÓXIMOS ESTRENOS :film_strip:
+# CARDS RECOMENDACIONES, CALENDARIO, PRÓXIMOS ESTRENOS :film_projector:
 <img height="500px" width="1000px" src="/src/assets/img/eventos2.png">
 
-# FESTIVALES :film_projector:
-<img height="400px" width="800px" src="/src/assets/img/festivales.png">
+# FESTIVALES :clapper:
+<img height="500px" width="400px" src="/src/assets/img/festivales.png">
 
 # CRÍTICAS :film_strip:
-<img height="500px" width="1000px" src="/src/assets/img/criticas.png">
+<img height="500px" width="400px" src="/src/assets/img/criticas.png">
 
-# RECOMENDACIONES :film_strip:
-<img height="500px" width="1000px" src="/src/assets/img/recomendaciones.png">
+# RECOMENDACIONES :film_projector:
+<img height="500px" width="400px" src="/src/assets/img/recomendaciones.png">
 
-# FOOTER :film_projector:
-<img height="400px" width="800px" src="/src/assets/img/footer.png">
+# FOOTER :clapper:
+<img height="200px" width="800px" src="/src/assets/img/footer.png">
 
