@@ -6,41 +6,36 @@
 [![VER VIDEO](https://img.youtube.com/vi/rf7p1Je0xvo/0.jpg)](https://www.youtube.com/watch?v=rf7p1Je0xvo)
 
 
-# PANTALLA INICIO LOGIN :film_projector:
-<img height="400px" width="800px" src="/src/assets/img/login.png">
+# CARD BIENVENIDA :film_projector:
+<img height="400px" width="800px" src="/src/assets/img/home.png">
 
-# VENTANA ERROR LOGIN :clapper:
-<img height="500px" width="400px" src="/src/assets/img/loginerror.png">
+# FORMULARIO INSERCIÓN PELICULAS :clapper:
+<img height="500px" width="400px" src="/src/assets/img/formulario1.png">
 
-# REGISTRO USUARIOS :film_strip:
-<img height="500px" width="400px" src="/src/assets/img/registro.png">
+# FORMULARIO INSERCIÓN DEL BOTÓN FLOTANTE :film_strip:
+<img height="500px" width="400px" src="/src/assets/img/formulario2.png">
 
-# RECUPERAR CONTRASEÑA :film_projector:
-<img height="400px" width="800px" src="/src/assets/img/recuperar.png">
+# TABLA LISTADO PELÍCULAS :film_projector:
+<img height="400px" width="800px" src="/src/assets/img/listado.png">
 
-# PANEL CON OPCIONES :clapper:
-<img height="500px" width="400px" src="/src/assets/img/opciones.png">
+# CONFIRMACIÓN BORRADO :clapper:
+<img height="500px" width="400px" src="/src/assets/img/borrado.png">
 
-# PÁGINA LISTADO DE PELÍCULAS :film_strip:
-<img height="500px" width="1000px" src="/src/assets/img/coleccion.png">
+# CARDS HOMENAJEADOS, FESTIVALES, CRÍTICAS :film_strip:
+<img height="500px" width="400px" src="/src/assets/img/eventos.png">
 
-# BUSQUEDA PARA FILTRAR PELÍCULAS :film_projector:
-<img height="400px" width="800px" src="/src/assets/img/coleccion3.png">
+# CARDS RECOMENDACIONES, CALENDARIO, PRÓXIMOS ESTRENOS :film_strip:
+<img height="500px" width="1000px" src="/src/assets/img/eventos2.png">
 
-# BOTONES PARA INSERCIÓN, EDICIÓN y ELIMINACIÓN DE PELÍCULAS :clapper:
-<img height="500px" width="1000px" src="/src/assets/img/coleccion2.png">
+# FESTIVALES :film_projector:
+<img height="400px" width="800px" src="/src/assets/img/festivales.png">
 
-# FORMULARIO INSERCIÓN Y EDICIÓN DE PELÍCULAS :film_strip:
-<img height="500px" width="1000px" src="/src/assets/img/formulario.png">
+# CRÍTICAS :film_strip:
+<img height="500px" width="1000px" src="/src/assets/img/criticas.png">
 
-# PÁGINA EVENTOS :film_projector:
-<img height="400px" width="800px" src="/src/assets/img/eventos.png">
+# RECOMENDACIONES :film_strip:
+<img height="500px" width="1000px" src="/src/assets/img/recomendaciones.png">
 
-# INTERACCIÓN CON RECOMENDACIONES SEGÚN EDAD :clapper:
-<img height="400px" width="800px" src="/src/assets/img/eventos2.png">
+# FOOTER :film_projector:
+<img height="400px" width="800px" src="/src/assets/img/footer.png">
 
-# PÁGINA CONTACTO :film_strip:
-<img height="400px" width="800px" src="/src/assets/img/contacto.png">
-
-# INTERACCIÓN SABIDURÍA CINÉFILA :film_projector:
-<img height="400px" width="800px" src="/src/assets/img/contacto2.png">
