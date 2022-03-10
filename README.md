@@ -1,27 +1,46 @@
-# FILMHOME ANGULAR
+# FilmHome_Angular :clapper:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+:film_strip: Aplicación sobre el mundo del cine, y listado para gestionar las películas que un usuario puede tener como colección en su casa. :film_projector:
 
-## Development server
+# VIDEO YOUTUBE EXPLICATIVO :film_strip:
+[![VER VIDEO](https://img.youtube.com/vi/rQV_dXbKRls/0.jpg)](https://www.youtube.com/watch?v=rQV_dXbKRls)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# PANTALLA INICIO LOGIN :film_projector:
+<img height="400px" width="800px" src="/src/assets/img/login.png">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# VENTANA ERROR LOGIN :clapper:
+<img height="500px" width="400px" src="/src/assets/img/loginerror.png">
 
-## Build
+# REGISTRO USUARIOS :film_strip:
+<img height="500px" width="400px" src="/src/assets/img/registro.png">
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# RECUPERAR CONTRASEÑA :film_projector:
+<img height="400px" width="800px" src="/src/assets/img/recuperar.png">
 
-## Running unit tests
+# PANEL CON OPCIONES :clapper:
+<img height="500px" width="400px" src="/src/assets/img/opciones.png">
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# PÁGINA LISTADO DE PELÍCULAS :film_strip:
+<img height="500px" width="1000px" src="/src/assets/img/coleccion.png">
 
-## Running end-to-end tests
+# BUSQUEDA PARA FILTRAR PELÍCULAS :film_projector:
+<img height="400px" width="800px" src="/src/assets/img/coleccion3.png">
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# BOTONES PARA INSERCIÓN, EDICIÓN y ELIMINACIÓN DE PELÍCULAS :clapper:
+<img height="500px" width="1000px" src="/src/assets/img/coleccion2.png">
 
-## Further help
+# FORMULARIO INSERCIÓN Y EDICIÓN DE PELÍCULAS :film_strip:
+<img height="500px" width="1000px" src="/src/assets/img/formulario.png">
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# PÁGINA EVENTOS :film_projector:
+<img height="400px" width="800px" src="/src/assets/img/eventos.png">
+
+# INTERACCIÓN CON RECOMENDACIONES SEGÚN EDAD :clapper:
+<img height="400px" width="800px" src="/src/assets/img/eventos2.png">
+
+# PÁGINA CONTACTO :film_strip:
+<img height="400px" width="800px" src="/src/assets/img/contacto.png">
+
+# INTERACCIÓN SABIDURÍA CINÉFILA :film_projector:
+<img height="400px" width="800px" src="/src/assets/img/contacto2.png">
