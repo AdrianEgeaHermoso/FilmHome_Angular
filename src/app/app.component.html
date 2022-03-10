@@ -170,7 +170,7 @@
     </div>
 
     <p-footer>
-      <p-button (click)="deleteProduct()" label="Yes"></p-button>
+      <p-button (click)="deleteProduct()" label="Si"></p-button>
       &nbsp;
       <p-button (click)="displayConfirmDelete = false" label="No"></p-button>
     </p-footer>
@@ -227,18 +227,22 @@
   </div>
 
   <div class="col-4">
-    <p-card header="PRÓXIMOS ESTRENOS" [style]="{'background-color':'#3393C8'}">
-      <i class="pi pi-ticket" style="font-size: 2rem"></i>
+    <p-card header="ÚLTIMAS CRÍTICAS" [style]="{'background-color':'#3393C8'}">
+      <i class="pi pi-users" style="font-size: 2rem"></i>
     </p-card>
     <p-card [style]="{'background-color':'#21E2F2'}">
-      <ul>
-        <li>Morbius <b>01/04</b></li>
-        <img src="../assets/img/morbius.jpg" alt="Morbius" style="width:30%;height:60%;">
-        <li>Animales fantásticos: Los secretos de Dumbledore <b>08/04</b></li>
-        <img src="../assets/img/animales.jpg" alt="Animales Fantasticos" style="width:30%;height:60%;">
-        <li>La ciudad perdida <b>13/04</b> </li>
-        <img src="../assets/img/west.jpg" alt="La ciudad perdida" style="width:30%;height:60%;">
-      </ul>
+      <p-fieldset legend="Uncharted" [toggleable]="true">
+        <img src="../assets/img/uncharted.jpg" width="200" height="250"><br>
+        <p>"La película da lo que promete (...): puro entretenimiento, unas escenas aéreas (...) francamente estupendas (...) estos chicos han llegado para seguir robando tesoros. (…)</p>
+    </p-fieldset>
+    <p-fieldset legend="The Batman" [toggleable]="true">
+      <img src="../assets/img/batman.jpg" width="200" height="250"><br>
+      <p>"'The Batman' (con el artículo determinado que singulariza lo ya singular) acaba por ser un deslumbrante y soberbio espectáculo al anochecer. Una obra maestra que no es más que una antiobra maestra. (…)</p>
+  </p-fieldset>
+  <p-fieldset legend="Super..¿Quién?" [toggleable]="true">
+    <img src="../assets/img/super.jpg" width="200" height="250"><br>
+    <p>"Descerebrada comedia (...) discurre entre gags burdos y otros más divertidos, de comicidad rápida y epidérmica, con personajes aún más grotescos que el joven superhéroe a su pesar (…)</p>
+</p-fieldset>
     </p-card>
   </div>
 </div>
@@ -321,3 +325,4 @@
   <p><b>Adrián Egea Hermoso</b></p>
   <p><b>Curso 2º DAM / Centro de Estudios I.E.S. Campanillas</b></p>
 </p-card>
+

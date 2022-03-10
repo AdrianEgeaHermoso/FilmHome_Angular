@@ -24,6 +24,7 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import {AvatarModule} from 'primeng/avatar';
 import { CalendarComponent } from './calendar/calendar.component';
 import {CalendarModule} from 'primeng/calendar';
+import {FieldsetModule} from 'primeng/fieldset';
 
 
 
@@ -53,7 +54,8 @@ import {CalendarModule} from 'primeng/calendar';
     InputTextModule,
     InputNumberModule,
     AvatarModule,
-    CalendarModule
+    CalendarModule,
+    FieldsetModule
 
   
   ],
